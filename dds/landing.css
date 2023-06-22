@@ -1,0 +1,313 @@
+ @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+  body {
+            background-image: url("../Images/tenant.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        
+
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background: #95c41f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    z-index: 100;
+}
+
+label.logo{
+    color:#f49404;
+    font-size: 28px;
+    line-height: 60px;
+    padding: 0 100px;
+    font-weight: bold;
+    cursor: pointer;
+    transition-delay: .1s;
+}
+
+label.logo:hover {
+    color: #9777;
+    transition-delay: .3s;
+}
+
+nav ul {
+    float: right;
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px ;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 19px 16px 18.5px;
+    text-transform: uppercase;
+}
+
+.sub-menu-1{
+    display: none;
+
+}
+
+nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #ffdd32;
+    background-color: rgba(0, 0, 0, 1);/*making it black*/
+    margin-top: 10 px;
+    margin-left: -15px;
+    height: 100px;
+    
+   
+}
+.sub-menu-1:hover{
+    
+        color:#f59503;
+        background: transparent;/*to make transparent*/
+        border: 2px solid #f59503;
+        
+    
+}
+
+
+nav ul li:hover .sub-menu-1 ul li{
+    display: block;
+    width: 20px;
+    margin: 20px;
+   height:10px;
+   margin-top: 10px;
+   
+}
+.active,a:hover {
+    color:#fe5000;
+    transition: .5s;
+    text-decoration: none;
+}
+ .sub-btn {
+    height: 60px;
+    width: 200px;
+    border: none;
+    font-size: 16px;
+    color: #95c41f;
+    background: #fff;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif; 
+}
+ 
+
+ .check-btn {
+    font-size: 30px;
+    color:#fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+ }
+
+ #check {
+    display: none;
+ }
+
+ @media (max-width:952){
+    label.logo {
+        font-size: 28px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .container {
+        margin: auto;
+        padding: auto;
+        display: block;
+    }
+
+    #color-picker {
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        z-index: 9999;
+        flex-direction: column;
+        border: 1px solid rgba(0,0,0,0.225);
+        background: rgba(225, 225, 255,0.187);
+        backdrop-filter: blur(25px);
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+        padding: 10px;
+    }
+ }
+
+ @media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #95c41f;
+        top: 60px;
+        left: -100%;
+        padding: 0 40px;
+        transition: all.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    a:hover,a.active{
+        background: none;
+        color: #977777;
+        
+
+    }
+
+   
+    #color-picker{
+        right: 20px;
+        z-index: 9999;
+        flex-direction: column;
+        border: 1px solid rgba(0,0,0,0.225);
+        background: rgba(225, 225, 255,0.187);
+        backdrop-filter: blur(25px);
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+        padding: 10px;
+    }
+
+    .plan .plans {
+        display: none;
+    }
+
+    label.logo {
+        font-size: 28px;
+        padding: 0 100px;
+    }
+ }
+
+ section{
+    background: url(Images/house.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 100px);
+    display: flex;
+ }
+
+ form {
+    display: block;
+    margin-top: 0em;
+
+ }
+
+ .banner{
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+ }
+
+ .banner .content {
+    height: 50vh;
+    padding: 0 100px;
+    border: none;
+     
+ }
+
+ .content h2{
+    font-size: 40px;
+    font-weight: 700;
+    color:#fff;
+    margin: 0 0 20px;
+ }
+
+ .content p {
+    font-size: 17px;
+    font-weight: 400;
+    color:#fff;
+    line-height: 26px;
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+
+ }
+
+ .content .start-btn{
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    transition: .9s ease;
+    font-weight: 600;
+    padding: 0 25px 0 25px;
+    line-height: 46px;
+    border-radius: 3px;
+    margin: 2px 0;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    color:#fff ;
+    background: #e7c106;
+    border: 2px solid #714605;
+    font-family: 'Nunito',sans-serif;
+    
+
+ }
+ .my-link{
+    color:#fff ;
+    text-decoration: none;
+    
+ }
+
+ .start-btn:hover {
+    color:#f59503;
+    background: transparent;
+    border: 2px solid #f59503;;
+
+ }
+
+ .content .learn-btn {
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    transition: .9s ease;
+    font-weight: 600;
+    padding: 0 25px 0 25px;
+    line-height: 46px;
+    border-radius: 3px;
+    margin: 2px 0;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    color: #95c41f;
+    background: transparent;
+    border: 2px solid #95c41f;;
+    font-family: 'Nunito',sans-serif;
+
+
+ }
+
+
+
